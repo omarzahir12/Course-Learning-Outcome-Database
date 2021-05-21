@@ -1,0 +1,234 @@
+\hypertarget{classsrc_1_1CourseT}{}\section{src.\+CourseT Class Reference}
+\label{classsrc_1_1CourseT}\index{src.\+CourseT@{src.\+CourseT}}
+
+
+Class for initializing and operating on \hyperlink{classsrc_1_1CourseT}{CourseT} objects.  
+
+
+
+
+Inheritance diagram for src.\+CourseT\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=156pt]{classsrc_1_1CourseT__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for src.\+CourseT\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=156pt]{classsrc_1_1CourseT__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classsrc_1_1CourseT_a1823da8802163805bfc9e387557730de}{CourseT} (String course\+Name, \hyperlink{enumsrc_1_1IndicatorT}{IndicatorT}\mbox{[}$\,$\mbox{]} indicators)
+\begin{DoxyCompactList}\small\item\em Method for constructing the \hyperlink{classsrc_1_1CourseT}{CourseT} object. \end{DoxyCompactList}\item 
+String \hyperlink{classsrc_1_1CourseT_a1cb1fbf76793e8b4f86946162acdb9a8}{get\+Name} ()
+\begin{DoxyCompactList}\small\item\em Getter for returning the name of the \hyperlink{classsrc_1_1CourseT}{CourseT} object. \end{DoxyCompactList}\item 
+\hyperlink{enumsrc_1_1IndicatorT}{IndicatorT} \mbox{[}$\,$\mbox{]} \hyperlink{classsrc_1_1CourseT_a303c3055b3a9ae2e80d0b7cfed58824f}{get\+Indicators} ()
+\begin{DoxyCompactList}\small\item\em Getter for returning the array of \hyperlink{enumsrc_1_1IndicatorT}{IndicatorT} objects given at the time of initialization. \end{DoxyCompactList}\item 
+\hyperlink{classsrc_1_1LOsT}{L\+OsT} \mbox{[}$\,$\mbox{]} \hyperlink{classsrc_1_1CourseT_aeec398eb1776b7b635a0f377b638992e}{get\+L\+Os} (\hyperlink{enumsrc_1_1IndicatorT}{IndicatorT} indicator)
+\begin{DoxyCompactList}\small\item\em Method for retrieving the \hyperlink{classsrc_1_1LOsT}{L\+OsT} objects that are mapped to a given \hyperlink{enumsrc_1_1IndicatorT}{IndicatorT} object. \end{DoxyCompactList}\item 
+void \hyperlink{classsrc_1_1CourseT_af1c3eb729e731d0b14f289655ce531ee}{add\+LO} (\hyperlink{enumsrc_1_1IndicatorT}{IndicatorT} indicator, \hyperlink{classsrc_1_1LOsT}{L\+OsT} outcome)
+\begin{DoxyCompactList}\small\item\em Method for adding/mapping a given \hyperlink{classsrc_1_1LOsT}{L\+OsT} object to a given \hyperlink{enumsrc_1_1IndicatorT}{IndicatorT} object. \end{DoxyCompactList}\item 
+void \hyperlink{classsrc_1_1CourseT_af325e1768e2368bb4588f13ac075cd2c}{del\+LO} (\hyperlink{enumsrc_1_1IndicatorT}{IndicatorT} indicator, \hyperlink{classsrc_1_1LOsT}{L\+OsT} outcome)
+\begin{DoxyCompactList}\small\item\em Method for removing a given \hyperlink{classsrc_1_1LOsT}{L\+OsT} object that is mapped to a given \hyperlink{enumsrc_1_1IndicatorT}{IndicatorT} object. \end{DoxyCompactList}\item 
+boolean \hyperlink{classsrc_1_1CourseT_a98d560017671e680b42c9d781eb9bb5a}{member} (\hyperlink{enumsrc_1_1IndicatorT}{IndicatorT} indicator, \hyperlink{classsrc_1_1LOsT}{L\+OsT}\mbox{[}$\,$\mbox{]} outcomes)
+\begin{DoxyCompactList}\small\item\em Method for checking if a given \hyperlink{enumsrc_1_1IndicatorT}{IndicatorT} object exists with the given amount of \hyperlink{classsrc_1_1LOsT}{L\+OsT} objects mapped to it. \end{DoxyCompactList}\item 
+double \mbox{[}$\,$\mbox{]} \hyperlink{classsrc_1_1CourseT_aa9abf592dff159aa10f74a7342296351}{measures} ()
+\begin{DoxyCompactList}\small\item\em Implements the measure method from the Measure module that accepts no input. \end{DoxyCompactList}\item 
+double \mbox{[}$\,$\mbox{]} \hyperlink{classsrc_1_1CourseT_ac81d229c59608e1848f077e9ac61d381}{measures} (\hyperlink{enumsrc_1_1IndicatorT}{IndicatorT} ind)
+\begin{DoxyCompactList}\small\item\em Implements the measure method from the Measure module that accepts an \hyperlink{enumsrc_1_1IndicatorT}{IndicatorT} object. \end{DoxyCompactList}\item 
+double \mbox{[}$\,$\mbox{]} \hyperlink{classsrc_1_1CourseT_a63d2487bf823e561f12fb06299b23ecd}{measures} (\hyperlink{classsrc_1_1AttributeT}{AttributeT} att)
+\begin{DoxyCompactList}\small\item\em Implements the measure method from the Measure module that accepts an \hyperlink{enumsrc_1_1IndicatorT}{IndicatorT} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class for initializing and operating on \hyperlink{classsrc_1_1CourseT}{CourseT} objects. 
+
+Consists of various functions, including the constructor, useful methods, getters, as well as the implementations of the measures methods from the Measures module. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classsrc_1_1CourseT_a1823da8802163805bfc9e387557730de}\label{classsrc_1_1CourseT_a1823da8802163805bfc9e387557730de}} 
+\index{src\+::\+CourseT@{src\+::\+CourseT}!CourseT@{CourseT}}
+\index{CourseT@{CourseT}!src\+::\+CourseT@{src\+::\+CourseT}}
+\subsubsection{\texorpdfstring{Course\+T()}{CourseT()}}
+{\footnotesize\ttfamily src.\+Course\+T.\+CourseT (\begin{DoxyParamCaption}\item[{String}]{course\+Name,  }\item[{\hyperlink{enumsrc_1_1IndicatorT}{IndicatorT} \mbox{[}$\,$\mbox{]}}]{indicators }\end{DoxyParamCaption})}
+
+
+
+Method for constructing the \hyperlink{classsrc_1_1CourseT}{CourseT} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em course\+Name} & A String to represent the name. \\
+\hline
+{\em indicators} & An array of indicators to be stored in the course object.\\
+\hline
+\end{DoxyParams}
+The constructor makes use of a Hashmap that maps an empty array of L\+Os objects to each of the indicators as separate keys. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classsrc_1_1CourseT_af1c3eb729e731d0b14f289655ce531ee}\label{classsrc_1_1CourseT_af1c3eb729e731d0b14f289655ce531ee}} 
+\index{src\+::\+CourseT@{src\+::\+CourseT}!add\+LO@{add\+LO}}
+\index{add\+LO@{add\+LO}!src\+::\+CourseT@{src\+::\+CourseT}}
+\subsubsection{\texorpdfstring{add\+L\+O()}{addLO()}}
+{\footnotesize\ttfamily void src.\+Course\+T.\+add\+LO (\begin{DoxyParamCaption}\item[{\hyperlink{enumsrc_1_1IndicatorT}{IndicatorT}}]{indicator,  }\item[{\hyperlink{classsrc_1_1LOsT}{L\+OsT}}]{outcome }\end{DoxyParamCaption})}
+
+
+
+Method for adding/mapping a given \hyperlink{classsrc_1_1LOsT}{L\+OsT} object to a given \hyperlink{enumsrc_1_1IndicatorT}{IndicatorT} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em indicator} & An \hyperlink{enumsrc_1_1IndicatorT}{IndicatorT} object for mapping the L\+Os object to. \\
+\hline
+{\em outcome} & An \hyperlink{classsrc_1_1LOsT}{L\+OsT} object for mapping to the given \hyperlink{enumsrc_1_1IndicatorT}{IndicatorT} object.\\
+\hline
+\end{DoxyParams}
+If the \hyperlink{enumsrc_1_1IndicatorT}{IndicatorT} object is found, the L\+Os object is only added if another L\+Os object of the same name does not exist there. If the \hyperlink{enumsrc_1_1IndicatorT}{IndicatorT} object does not exist, or the \hyperlink{classsrc_1_1LOsT}{L\+OsT} object already exists mapped to the \hyperlink{enumsrc_1_1IndicatorT}{IndicatorT} object, nothing is done. \mbox{\Hypertarget{classsrc_1_1CourseT_af325e1768e2368bb4588f13ac075cd2c}\label{classsrc_1_1CourseT_af325e1768e2368bb4588f13ac075cd2c}} 
+\index{src\+::\+CourseT@{src\+::\+CourseT}!del\+LO@{del\+LO}}
+\index{del\+LO@{del\+LO}!src\+::\+CourseT@{src\+::\+CourseT}}
+\subsubsection{\texorpdfstring{del\+L\+O()}{delLO()}}
+{\footnotesize\ttfamily void src.\+Course\+T.\+del\+LO (\begin{DoxyParamCaption}\item[{\hyperlink{enumsrc_1_1IndicatorT}{IndicatorT}}]{indicator,  }\item[{\hyperlink{classsrc_1_1LOsT}{L\+OsT}}]{outcome }\end{DoxyParamCaption})}
+
+
+
+Method for removing a given \hyperlink{classsrc_1_1LOsT}{L\+OsT} object that is mapped to a given \hyperlink{enumsrc_1_1IndicatorT}{IndicatorT} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em indicator} & An \hyperlink{enumsrc_1_1IndicatorT}{IndicatorT} object that has the L\+Os object mapped to it. \\
+\hline
+{\em outcome} & An \hyperlink{classsrc_1_1LOsT}{L\+OsT} object that is mapped to the given \hyperlink{enumsrc_1_1IndicatorT}{IndicatorT} object.\\
+\hline
+\end{DoxyParams}
+If the \hyperlink{enumsrc_1_1IndicatorT}{IndicatorT} object is found, the L\+Os object is only removed if an L\+Os object of the same name exists there. If the \hyperlink{enumsrc_1_1IndicatorT}{IndicatorT} object does not exist, or the \hyperlink{classsrc_1_1LOsT}{L\+OsT} object of the same name does not exist mapped to the \hyperlink{enumsrc_1_1IndicatorT}{IndicatorT} object, nothing is done. \mbox{\Hypertarget{classsrc_1_1CourseT_a303c3055b3a9ae2e80d0b7cfed58824f}\label{classsrc_1_1CourseT_a303c3055b3a9ae2e80d0b7cfed58824f}} 
+\index{src\+::\+CourseT@{src\+::\+CourseT}!get\+Indicators@{get\+Indicators}}
+\index{get\+Indicators@{get\+Indicators}!src\+::\+CourseT@{src\+::\+CourseT}}
+\subsubsection{\texorpdfstring{get\+Indicators()}{getIndicators()}}
+{\footnotesize\ttfamily \hyperlink{enumsrc_1_1IndicatorT}{IndicatorT} \mbox{[}$\,$\mbox{]} src.\+Course\+T.\+get\+Indicators (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter for returning the array of \hyperlink{enumsrc_1_1IndicatorT}{IndicatorT} objects given at the time of initialization. 
+
+The \hyperlink{enumsrc_1_1IndicatorT}{IndicatorT} objects from the class\textquotesingle{}s Hashmap. \begin{DoxyReturn}{Returns}
+Array of \hyperlink{enumsrc_1_1IndicatorT}{IndicatorT} objects for the Course. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classsrc_1_1CourseT_aeec398eb1776b7b635a0f377b638992e}\label{classsrc_1_1CourseT_aeec398eb1776b7b635a0f377b638992e}} 
+\index{src\+::\+CourseT@{src\+::\+CourseT}!get\+L\+Os@{get\+L\+Os}}
+\index{get\+L\+Os@{get\+L\+Os}!src\+::\+CourseT@{src\+::\+CourseT}}
+\subsubsection{\texorpdfstring{get\+L\+Os()}{getLOs()}}
+{\footnotesize\ttfamily \hyperlink{classsrc_1_1LOsT}{L\+OsT} \mbox{[}$\,$\mbox{]} src.\+Course\+T.\+get\+L\+Os (\begin{DoxyParamCaption}\item[{\hyperlink{enumsrc_1_1IndicatorT}{IndicatorT}}]{indicator }\end{DoxyParamCaption})}
+
+
+
+Method for retrieving the \hyperlink{classsrc_1_1LOsT}{L\+OsT} objects that are mapped to a given \hyperlink{enumsrc_1_1IndicatorT}{IndicatorT} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em indicator} & An \hyperlink{enumsrc_1_1IndicatorT}{IndicatorT} object for which the L\+Os objects that are mapped to it are to be returned.\\
+\hline
+\end{DoxyParams}
+If the \hyperlink{enumsrc_1_1IndicatorT}{IndicatorT} object is found, the L\+Os objects that are mapped to it are returned. If the \hyperlink{enumsrc_1_1IndicatorT}{IndicatorT} object does not exist, or there are no \hyperlink{classsrc_1_1LOsT}{L\+OsT} objects mapped to it nothing, an empty array of \hyperlink{classsrc_1_1LOsT}{L\+OsT} objects is returned. \begin{DoxyReturn}{Returns}
+Array of \hyperlink{classsrc_1_1LOsT}{L\+OsT} objects that correspond to the given \hyperlink{enumsrc_1_1IndicatorT}{IndicatorT} object. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classsrc_1_1CourseT_a1cb1fbf76793e8b4f86946162acdb9a8}\label{classsrc_1_1CourseT_a1cb1fbf76793e8b4f86946162acdb9a8}} 
+\index{src\+::\+CourseT@{src\+::\+CourseT}!get\+Name@{get\+Name}}
+\index{get\+Name@{get\+Name}!src\+::\+CourseT@{src\+::\+CourseT}}
+\subsubsection{\texorpdfstring{get\+Name()}{getName()}}
+{\footnotesize\ttfamily String src.\+Course\+T.\+get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter for returning the name of the \hyperlink{classsrc_1_1CourseT}{CourseT} object. 
+
+\begin{DoxyReturn}{Returns}
+The name of the course as a String. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classsrc_1_1CourseT_aa9abf592dff159aa10f74a7342296351}\label{classsrc_1_1CourseT_aa9abf592dff159aa10f74a7342296351}} 
+\index{src\+::\+CourseT@{src\+::\+CourseT}!measures@{measures}}
+\index{measures@{measures}!src\+::\+CourseT@{src\+::\+CourseT}}
+\subsubsection{\texorpdfstring{measures()}{measures()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily double \mbox{[}$\,$\mbox{]} src.\+Course\+T.\+measures (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implements the measure method from the Measure module that accepts no input. 
+
+This method is not supported in this class. If invoked, an Unsupported\+Operation\+Exception will be thrown. 
+\begin{DoxyExceptions}{Exceptions}
+{\em Unsupported\+Operation\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classsrc_1_1CourseT_ac81d229c59608e1848f077e9ac61d381}\label{classsrc_1_1CourseT_ac81d229c59608e1848f077e9ac61d381}} 
+\index{src\+::\+CourseT@{src\+::\+CourseT}!measures@{measures}}
+\index{measures@{measures}!src\+::\+CourseT@{src\+::\+CourseT}}
+\subsubsection{\texorpdfstring{measures()}{measures()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily double \mbox{[}$\,$\mbox{]} src.\+Course\+T.\+measures (\begin{DoxyParamCaption}\item[{\hyperlink{enumsrc_1_1IndicatorT}{IndicatorT}}]{ind }\end{DoxyParamCaption})}
+
+
+
+Implements the measure method from the Measure module that accepts an \hyperlink{enumsrc_1_1IndicatorT}{IndicatorT} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ind} & An \hyperlink{enumsrc_1_1IndicatorT}{IndicatorT} object.\\
+\hline
+\end{DoxyParams}
+Overrides the measure method in the Measure module.
+
+\begin{DoxyReturn}{Returns}
+The sum of all the L\+Os objects for a given \hyperlink{enumsrc_1_1IndicatorT}{IndicatorT} object in the course, or the normal of this sum if that is specified by a boolean value of n\+Ind in the \hyperlink{classsrc_1_1Norm}{Norm}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classsrc_1_1CourseT_a63d2487bf823e561f12fb06299b23ecd}\label{classsrc_1_1CourseT_a63d2487bf823e561f12fb06299b23ecd}} 
+\index{src\+::\+CourseT@{src\+::\+CourseT}!measures@{measures}}
+\index{measures@{measures}!src\+::\+CourseT@{src\+::\+CourseT}}
+\subsubsection{\texorpdfstring{measures()}{measures()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily double \mbox{[}$\,$\mbox{]} src.\+Course\+T.\+measures (\begin{DoxyParamCaption}\item[{\hyperlink{classsrc_1_1AttributeT}{AttributeT}}]{att }\end{DoxyParamCaption})}
+
+
+
+Implements the measure method from the Measure module that accepts an \hyperlink{enumsrc_1_1IndicatorT}{IndicatorT} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em att} & An \hyperlink{classsrc_1_1AttributeT}{AttributeT} object.\\
+\hline
+\end{DoxyParams}
+Overrides the measure method in the Measure module. \begin{DoxyReturn}{Returns}
+The sum of all the L\+Os objects for all the \hyperlink{enumsrc_1_1IndicatorT}{IndicatorT} objects that correspond to the \hyperlink{classsrc_1_1AttributeT}{AttributeT} object provided, or the normal of this sum if that is specified by a boolean value of n\+Att in the \hyperlink{classsrc_1_1Norm}{Norm}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classsrc_1_1CourseT_a98d560017671e680b42c9d781eb9bb5a}\label{classsrc_1_1CourseT_a98d560017671e680b42c9d781eb9bb5a}} 
+\index{src\+::\+CourseT@{src\+::\+CourseT}!member@{member}}
+\index{member@{member}!src\+::\+CourseT@{src\+::\+CourseT}}
+\subsubsection{\texorpdfstring{member()}{member()}}
+{\footnotesize\ttfamily boolean src.\+Course\+T.\+member (\begin{DoxyParamCaption}\item[{\hyperlink{enumsrc_1_1IndicatorT}{IndicatorT}}]{indicator,  }\item[{\hyperlink{classsrc_1_1LOsT}{L\+OsT} \mbox{[}$\,$\mbox{]}}]{outcomes }\end{DoxyParamCaption})}
+
+
+
+Method for checking if a given \hyperlink{enumsrc_1_1IndicatorT}{IndicatorT} object exists with the given amount of \hyperlink{classsrc_1_1LOsT}{L\+OsT} objects mapped to it. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em indicator} & An \hyperlink{enumsrc_1_1IndicatorT}{IndicatorT} object that should have the L\+Os objects mapped to it. \\
+\hline
+{\em outcomes} & A array of \hyperlink{classsrc_1_1LOsT}{L\+OsT} objects that should be mapped to the given \hyperlink{enumsrc_1_1IndicatorT}{IndicatorT} object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A boolean indicating whether the given \hyperlink{classsrc_1_1LOsT}{L\+OsT} objects belong to the given \hyperlink{enumsrc_1_1IndicatorT}{IndicatorT} object for this course. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{CourseT_8java}{Course\+T.\+java}\end{DoxyCompactItemize}
